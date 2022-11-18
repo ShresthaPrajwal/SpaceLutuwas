@@ -111,7 +111,6 @@ def checkBullet():
     global bulletY
     if bulletY <= 0:
         bulletState = "Ready"
-        print("haha Laude hanna sakinas")
     if bulletState == "Ready":
         bulletX = playerX
         bulletY = playerY
@@ -151,7 +150,6 @@ def checkGameOver(i):
                          math.pow((alienY[i]-playerY), 2))
     if distance<40:
         for j in range(alienCount):
-            print("Game sakyo jatha")
             alienY[j]=2000
             gameOverCheck =1
         return 1
